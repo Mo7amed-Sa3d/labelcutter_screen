@@ -1,8 +1,9 @@
 {
   "screen": {
-    "width": 1024,
-    "height": 600,
-    "fullscreen": true
+    "width": 600,
+    "height": 1024,
+    "fullscreen": true,
+    "orientation": "portrait"
   },
   "grbl": {
     "port": "/dev/ttyUSB0",

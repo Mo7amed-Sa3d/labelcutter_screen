@@ -26,7 +26,7 @@ UPLOAD_PAGE = """
 
 class UploadServer:
     def __init__(self, gcode_dir, port=8080):
-        self.gcode_dir = gcode_dir
+        self.gcode_dir = os.path.expanduser(gcode_dir)
         self.port = port
         os.makedirs(self.gcode_dir, exist_ok=True)
         self.app = Flask(__name__)

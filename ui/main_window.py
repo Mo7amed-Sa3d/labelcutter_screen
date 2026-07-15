@@ -57,7 +57,7 @@ class MainWindow(Gtk.ApplicationWindow):
                                                default=[0.0, 0.0])),
         )
         self.upload_server = UploadServer(
-            gcode_dir=config.get("network", "gcode_dir", default="/home/pi/gcode_files"),
+            gcode_dir=config.get("network", "gcode_dir", default="~/gcode_files"),
             port=config.get("network", "upload_port", default=8080),
         )
         self.upload_server.start()

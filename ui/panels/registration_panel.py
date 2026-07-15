@@ -89,8 +89,10 @@ class RegistrationPanel:
         pixbuf = GdkPixbuf.Pixbuf.new_from_data(
             rgb.tobytes(), GdkPixbuf.Colorspace.RGB, False, 8, w, h, w * 3
         )
-        # scale down to keep the widget light on the Pi's GPU
-        scaled = pixbuf.scale_simple(640, int(640 * h / w), GdkPixbuf.InterpType.BILINEAR)
+        # scale down to keep the widget light on the Pi's GPU, and to fit
+        # inside a 600px-wide portrait screen (BTT TFT70 rotated) with margins
+        preview_w = 560
+        scaled = pixbuf.scale_simple(preview_w, int(preview_w * h / w), GdkPixbuf.InterpType.BILINEAR)
         self.image.set_from_pixbuf(scaled)
         return True
 

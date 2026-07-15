@@ -18,7 +18,10 @@ button:active {
 }
 
 button.nav-button {
-  min-width: 140px;
+  min-width: 96px;
+  font-size: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 button.danger {
