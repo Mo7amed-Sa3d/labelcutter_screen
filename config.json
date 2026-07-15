@@ -11,7 +11,7 @@
   },
   "network": {
     "upload_port": 8080,
-    "gcode_dir": "/home/pi/gcode_files"
+    "gcode_dir": "~/gcode_files"
   },
   "camera": {
     "index": 0,
