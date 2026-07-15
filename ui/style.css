@@ -1,0 +1,57 @@
+window {
+  background-color: #1a1a1a;
+}
+
+button {
+  font-size: 20px;
+  min-height: 60px;
+  min-width: 100px;
+  border-radius: 8px;
+  background-image: none;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+button:active {
+  background-color: #3a7bd5;
+}
+
+button.nav-button {
+  min-width: 140px;
+}
+
+button.danger {
+  background-color: #a52a2a;
+}
+
+button.success {
+  background-color: #2e7d32;
+}
+
+label.title {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+label.status {
+  font-size: 18px;
+  color: #cccccc;
+}
+
+label.value {
+  font-size: 22px;
+  color: #4fc3f7;
+  font-weight: bold;
+}
+
+progressbar {
+  min-height: 26px;
+}
+
+list, listview, treeview {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 18px;
+}
